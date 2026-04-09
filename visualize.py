@@ -110,8 +110,8 @@ def plot_separate_roc_curves(models, dataset_name="yonsei_faces", cache_dir="./c
 
 if __name__ == "__main__":
     models_to_compare = ["DenseNet121", "ResNet50", "EfficientNetB0"]
-    # Update default dataset to match common usage in other scripts
-    current_dataset = "ucirvine_chest_xray" 
+    # Update default dataset to match current usage in run_all.bat
+    current_dataset = "yonsei_faces" 
     
     plot_multi_model_confusion_matrices(models_to_compare, dataset_name=current_dataset)
     plot_separate_roc_curves(models_to_compare, dataset_name=current_dataset)
