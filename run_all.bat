@@ -2,7 +2,7 @@
 REM Windows Batch script to run anomaly detection commands in sequence
 
 set DATASET=ucirvine_chest_xray
-set EPOCHS=1
+set EPOCHS=20
 set BATCH=32
 
 echo 🚀 Starting Sequential Execution...
