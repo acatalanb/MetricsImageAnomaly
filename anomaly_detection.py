@@ -8,7 +8,7 @@ from train import train_model_pipeline, get_device
 import numpy as np
 
 CACHE_DIR = 'cache'
-DATASET_DIR = r'K:\ImageDataset'
+DATASET_DIR = '/home/ubuntu/ImageDataset' if os.name == 'posix' else r'K:\ImageDataset'   # Linux-friendly path for EC2
 IMG_SIZE = 150
 device = get_device(verbose=False)
 

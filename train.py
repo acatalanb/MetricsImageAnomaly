@@ -6,7 +6,7 @@ from metrics_manager import MetricsManager
 
 CACHE_DIR = 'cache'
 IMG_SIZE = 150
-DATASET_DIR = r'K:\ImageDataset'   # ← Local folder (PyCharm friendly)
+DATASET_DIR = '/home/ubuntu/ImageDataset' if os.name == 'posix' else r'K:\ImageDataset'   # Linux-friendly path for EC2
 
 os.makedirs(CACHE_DIR, exist_ok=True)
 
